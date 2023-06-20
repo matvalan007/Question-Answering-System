@@ -3,7 +3,7 @@ from fastapi import FastAPI
 
 app = FastAPI()
 
-model_checkpoint = r"C:\Users\USER\OneDrive\Desktop\QA_model\model"
+model_checkpoint = "consciousAI/question-answering-roberta-base-s"
 question_answerer = pipeline("question-answering", model=model_checkpoint)
 
 
